@@ -2,19 +2,19 @@
 <manifest>
 
   <remote name="aosp"
-           fetch="https://android-review.googlesource.com/" />
+           fetch="https://android-review.googlesource.com/"
+           review="https://android-review.googlesource.com/" />
   <remote name="snak3ater"
            fetch="git://github.com/snak3ater/" />
-           <remote name="CyanogenMod"
+           <remote name="github"
+           fetch="git://github.com/" />
+  <remote name="CyanogenMod"
            fetch="git://github.com/CyanogenMod/" />
-
-  <remote  name="SourceForge"
-           fetch="git://git.code.sf.net/p/" />
   <default revision="refs/tags/android-4.4.2_r2"
            remote="aosp"
            sync-j="4" />
-
-<project path="build" name="android_build" groups="pdk" remote="snak3ater" revision="kk" >
+           
+    <project path="build" name="android_build" groups="pdk" remote="snak3ater" revision="kk" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <copyfile src="lazyAll.sh" dest="lazyAll.sh" />
     <copyfile src="lazyClobber.sh" dest="lazyClobber.sh" />
@@ -22,7 +22,7 @@
     <copyfile src="lazyOthers.sh" dest="lazyOthers.sh" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
-  <project path="art" name="platform/art" />
+  <project path="art" name="android_art" remote="snak3ater" revision="kk" />
   <project path="bionic" name="android_bionic" groups="pdk" remote="snak3ater" revision="kk" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
@@ -37,7 +37,7 @@
   <project path="device/common" name="device/common" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
   <project path="device/generic/common" name="device/generic/common" groups="pdk" />
-  <project path="device/generic/goldfish" name="android_device_generic_goldfish" groups="pdk" remote="snak3ater" revision="kk" />
+  <project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" />
   <project path="device/generic/mips" name="device/generic/mips" groups="pdk" />
   <project path="device/generic/mini-emulator-armv7-a-neon" name="device/generic/mini-emulator-armv7-a-neon" groups="pdk" />
   <project path="device/generic/mini-emulator-mips" name="device/generic/mini-emulator-mips" groups="pdk" />
@@ -45,7 +45,7 @@
   <project path="device/generic/x86" name="device/generic/x86" groups="pdk" />
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
-<project path="device/lge/mako" name="device/lge/mako" groups="device,mako" />
+  <project path="device/lge/mako" name="device/lge/mako" groups="device,mako" />
   <project path="external/google/google_play_services" name="android_external_google_google_play_services" remote="snak3ater" revision="kk" />
   <project path="device/lge/mako-kernel" name="device/lge/mako-kernel" groups="device,mako" />
   <project path="device/sample" name="device/sample" groups="pdk" />
@@ -72,7 +72,7 @@
   <project path="external/chromium" name="android_external_chromium" remote="snak3ater" revision="kk" />
   <project path="external/chromium-libpac" name="platform/external/chromium-libpac" />
   <project path="external/chromium-trace" name="platform/external/chromium-trace" groups="pdk" />
-  <project path="external/chromium_org" name="android_external_chromium_org" remote="snak3ater" revision="kk" />
+  <project path="external/chromium_org" name="platform/external/chromium_org" />
   <project path="external/chromium_org/sdch/open-vcdiff" name="platform/external/chromium_org/sdch/open-vcdiff" />
   <project path="external/chromium_org/testing/gtest" name="platform/external/chromium_org/testing/gtest" />
   <project path="external/chromium_org/third_party/WebKit" name="platform/external/chromium_org/third_party/WebKit" />
@@ -243,9 +243,8 @@
   <project path="external/yaffs2" name="platform/external/yaffs2" groups="pdk" />
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zxing" name="platform/external/zxing" />
-<project path="frameworks/av" name="android_frameworks_av" groups="pdk" remote="snak3ater" revision="kk" />
+  <project path="frameworks/av" name="android_frameworks_av" groups="pdk" remote="snak3ater" revision="kk" />
   <project path="frameworks/base" name="android_frameworks_base" remote="snak3ater" revision="kk" />
-  
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="android_frameworks_compile_slang" groups="pdk" remote="snak3ater" revision="kk" />
@@ -279,7 +278,7 @@
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" />
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" />
-  <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" groups="qcom" remote="snak3ater" revision="kk" /> 
+  <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" groups="qcom" remote="snak3ater" revision="kk" />
   <project path="hardware/qcom/bt" name="platform/hardware/qcom/bt" groups="qcom" />
   <project path="hardware/qcom/camera" name="android_hardware_qcom_camera" groups="qcom" remote="snak3ater" revision="kk" />
   <project path="hardware/qcom/display" name="android_hardware_qcom_display" groups="qcom" remote="snak3ater" revision="kk" />
@@ -342,14 +341,13 @@
   <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" />
   <project path="packages/apps/Stk" name="platform/packages/apps/Stk" />
   <project path="packages/apps/Tag" name="platform/packages/apps/Tag" />
-  <project path="packages/apps/Torch" name="android_packages_apps_Torch" remote="CyanogenMod" revision="cm-11.0" />
+  <project path="packages/apps/Torch" name="SlimRoms/packages_apps_Torch" remote="github" revision="kk4.4" />
   <project path="packages/apps/UnifiedEmail" name="platform/packages/apps/UnifiedEmail" />
   <project path="packages/apps/VideoEditor" name="platform/packages/apps/VideoEditor" />
   <project path="packages/apps/VoiceDialer" name="platform/packages/apps/VoiceDialer" />
   <project path="packages/experimental" name="platform/packages/experimental" />
   <project path="packages/inputmethods/LatinIME" name="platform/packages/inputmethods/LatinIME" />
-    <project path="packages/inputmethods/OpenWnn" name="android_packages_inputmethods_OpenWnn" remote="snak3ater" revision="kk" />
-
+  <project path="packages/inputmethods/OpenWnn" name="android_packages_inputmethods_OpenWnn" remote="snak3ater" revision="kk" />
   <project path="packages/inputmethods/PinyinIME" name="platform/packages/inputmethods/PinyinIME" />
   <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" />
   <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider" />
@@ -401,10 +399,8 @@
   <project path="prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.7" name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.7" groups="pdk,darwin,x86" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" groups="pdk,linux,arm" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" groups="pdk,linux,arm" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="sabermodsmtoolchainsarmeabi48/code" groups="pdk,linux,arm" remote="SourceForge" revision="master" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6" groups="pdk,linux,arm" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" groups="pdk,linux,arm" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="smtoolchainsarmandroideabi48/code" groups="pdk,linux,arm" remote="SourceForge" revision="master" />
   <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.4.3" name="platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.4.3" groups="pdk,linux" />
   <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" name="platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" groups="pdk,linux" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" groups="pdk,linux" />
@@ -422,7 +418,7 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" />
- <project path="system/core" name="android_system_core" groups="pdk" remote="snak3ater" revision="kk" />
+  <project path="system/core" name="android_system_core" groups="pdk" remote="snak3ater" revision="kk" />
   <project path="system/extras" name="platform/system/extras" groups="pdk" />
   <project path="system/media" name="platform/system/media" groups="pdk" />
   <project path="system/netd" name="platform/system/netd" groups="pdk" />
@@ -442,4 +438,4 @@
   <project path="vendor/lge" name="android_vendor_lge" remote="snak3ater" revision="kk" />
   <project path="vendor/rascarlo" name="android_vendor_rascarlo" remote="snak3ater" revision="kk" />
 
-</manifest>
+</manifest> 
