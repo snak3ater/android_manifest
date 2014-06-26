@@ -14,4 +14,4 @@ lunch simpleaosp_hammerhead-user
 make otapackage -jx (x being however many cpu jobs)
 
 ##Credits##
-Google for AOSP, Rascarlo and Rastakat for a lot for commits, DariosF and Purity ROM, AOSPAL, AOSPA, CM, Other that we may missed, Etc.
+Google for AOSP, Rascarlo and Rastakat for a lot for commits, DariosF and Purity ROM, AOSPAL, AOSPA, CM, OmniROM,  Other that we may missed, Etc.
