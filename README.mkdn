@@ -8,10 +8,10 @@ repo sync -jx -f (x being however many cpu jobs)
 . build/envsetup.sh
 
 ##Get the right device to build##
-lunch simpleaosp_hammerhead-user
+lunch simpleaosp_hammerhead-user or lunch simpleaosp_mako-user
 
 ##Build it##
 make otapackage -jx (x being however many cpu jobs)
 
 ##Credits##
-Google for AOSP, Rascarlo and Rastakat for a lot for commits, DariosF and Purity ROM, AOSPAL, AOSPA, CM, OmniROM,  Other that we may missed, Etc.
+Google for AOSP, Rascarlo and Rastakat for a lot for commits, DariosF and Purity ROM, AOSPAL, AOSPA, CM, OmniROM, SlimROMS, Others that we may missed, Etc.
