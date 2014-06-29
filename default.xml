@@ -253,7 +253,7 @@
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zxing" name="platform/external/zxing" />
   <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
-  <project path="frameworks/base" name="SimpleAOSP/android_frameworks_base" remote="github" revision="kk" />
+  <project path="frameworks/base" name="SimpleAOSP/android_frameworks_base" remote="github" revision="staging" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -272,7 +272,7 @@
   <project path="frameworks/opt/net/voip" name="platform/frameworks/opt/net/voip" />
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" />
   <project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" />
-  <project path="frameworks/opt/telephony" name="SimpleAOSP/android_frameworks_opt_telephony" groups="pdk" remote="github" revision="kk" />
+  <project path="frameworks/opt/telephony" name="SimpleAOSP/android_frameworks_opt_telephony" groups="pdk" remote="github" revision="staging" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" />
   <project path="frameworks/opt/widget" name="platform/frameworks/opt/widget" />
   <project path="frameworks/rs" name="platform/frameworks/rs" groups="pdk" />
@@ -343,7 +343,7 @@
   <!-- <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" /> -->
-  <project path="packages/apps/Settings" name="SimpleAOSP/android_packages_apps_Settings" remote="github" revision="kk" />
+  <project path="packages/apps/Settings" name="SimpleAOSP/android_packages_apps_Settings" remote="github" revision="staging" />
   <!-- <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
@@ -369,7 +369,7 @@
   <!-- <project path="packages/screensavers/Basic" name="platform/packages/screensavers/Basic" />
   <project path="packages/screensavers/PhotoTable" name="platform/packages/screensavers/PhotoTable" />
   <project path="packages/screensavers/WebView" name="platform/packages/screensavers/WebView" /> -->
-    <project path="packages/services/Telephony" name="SimpleAOSP/android_packages_services_telephony" groups="pdk" remote="github" revision="kk" />
+    <project path="packages/services/Telephony" name="SimpleAOSP/android_packages_services_telephony" groups="pdk" remote="github" revision="staging" />
   <!-- <project path="packages/wallpapers/Basic" name="platform/packages/wallpapers/Basic" />
   <project path="packages/wallpapers/Galaxy4" name="platform/packages/wallpapers/Galaxy4" />
   <project path="packages/wallpapers/HoloSpiral" name="platform/packages/wallpapers/HoloSpiral" /> -->
