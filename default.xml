@@ -12,7 +12,7 @@
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="SimpleAOSP/android_build" groups="pdk" remote="github" revision="kk" >
+  <project path="build" name="SimpleAOSP/android_build" groups="pdk" remote="github" revision="staging" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
@@ -49,7 +49,7 @@
   <project path="device/lge/hammerhead" name="SimpleAOSP/android_device_lge_hammerhead" groups="device,hammerhead" remote="github" revision="kk" />
   <!-- <project path="device/lge/hammerhead-kernel" name="device/lge/hammerhead-kernel" groups="device,hammerhead" /> -->
   <project path="kernel/lge/hammerhead" name="SimpleAOSP/android_kernel_lge_hammerhead" groups="device,hammerhead" remote="github" revision="mainstream" />
-  <project path="device/lge/mako" name="device/lge/mako" groups="device,mako" />
+  <project path="device/lge/mako" name="SimpleAOSP/android_device_lge_mako" groups="device,mako" remote="github" revision="staging" />
   <project path="device/lge/mako-kernel" name="device/lge/mako-kernel" groups="device,mako" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <!-- We dont build for Manta -->
@@ -224,7 +224,7 @@
   <project path="external/sepolicy" name="platform/external/sepolicy" groups="pdk" />
   <project path="external/sfntly" name="platform/external/sfntly" />
   <project path="external/sil-fonts" name="platform/external/sil-fonts" />
-  <project path="external/skia" name="platform/external/skia" />
+  <project path="external/skia" name="SimpleAOSP/android_external_skia" remote="github" revision="staging" />
   <project path="external/smack" name="platform/external/smack" />
   <project path="external/smali" name="platform/external/smali" />
   <project path="external/sonivox" name="platform/external/sonivox" groups="pdk" />
@@ -262,7 +262,7 @@
   <project path="frameworks/ex" name="platform/frameworks/ex" />
   <project path="frameworks/mff" name="platform/frameworks/mff" />
   <project path="frameworks/ml" name="platform/frameworks/ml" />
-  <project path="frameworks/native" name="platform/frameworks/native" groups="pdk" />
+  <project path="frameworks/native" name="SimpleAOSP/android_frameworks_native" groups="pdk" remote="github" revision="staging" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" />
   <project path="frameworks/opt/carddav" name="platform/frameworks/opt/carddav" />
   <project path="frameworks/opt/colorpicker" name="platform/frameworks/opt/colorpicker" />
@@ -319,10 +319,10 @@
   <project path="packages/apps/Camera2" name="platform/packages/apps/Camera2" />
   <project path="packages/apps/CellBroadcastReceiver" name="platform/packages/apps/CellBroadcastReceiver" /> -->
   <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" />
-  <project path="packages/apps/Contacts" name="platform/packages/apps/Contacts" />
+  <project path="packages/apps/Contacts" name="SimpleAOSP/packages_apps_Contacts" remote="github" revision="staging" />
   <project path="packages/apps/ContactsCommon" name="platform/packages/apps/ContactsCommon" />
   <project path="packages/apps/DeskClock" name="platform/packages/apps/DeskClock" />
-  <project path="packages/apps/Dialer" name="platform/packages/apps/Dialer" />
+  <project path="packages/apps/Dialer" name="SimpleAOSP/android_packages_apps_Dialer" remote="github" revision="staging"/>
   <!-- <project path="packages/apps/Email" name="platform/packages/apps/Email" />
   <project path="packages/apps/Exchange" name="platform/packages/apps/Exchange" />
   <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" />
@@ -434,7 +434,7 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" />
-  <project path="system/core" name="platform/system/core" groups="pdk" />
+  <project path="system/core" name="SimpleAOSP/android_system_core" groups="pdk" remote="github" revision="staging" />
   <project path="system/extras" name="SimpleAOSP/android_system_extras" groups="pdk" remote="github" revision="kk" />
   <project path="system/media" name="platform/system/media" groups="pdk" />
   <project path="system/netd" name="platform/system/netd" groups="pdk" />
@@ -452,7 +452,7 @@
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" /> -->
   <project path="vendor/lge" name="SimpleAOSP/android_vendor_lge" remote="github" revision="kk" />
-  <project path="vendor/simpleaosp" name="SimpleAOSP/android_vendor_simpleaosp" remote="github" revision="kk" />
+  <project path="vendor/simpleaosp" name="SimpleAOSP/android_vendor_simpleaosp" remote="github" revision="staging" />
 
   <!-- Theme Manager -->
   <project path="packages/apps/ThemeChooser" name="android_packages_apps_ThemeChooser" remote="snak3ater" revision="kk" />
