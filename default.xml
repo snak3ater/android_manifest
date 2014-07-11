@@ -44,10 +44,8 @@
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
   <project path="device/lge/hammerhead" name="SimpleAOSP/android_device_lge_hammerhead" groups="device,hammerhead" remote="github" revision="kk" />
   <project path="device/lge/hammerhead-kernel" name="device/lge/hammerhead-kernel" groups="device,hammerhead" />
-  <project path="kernel/lge/hammerhead" name="SimpleAOSP/android_kernel_lge_hammerhead" groups="device,hammerhead" remote="github" revision="mainstream" />
   <project path="device/lge/mako" name="SimpleAOSP/android_device_lge_mako" groups="device,mako" remote="github" revision="kk" />
   <project path="device/lge/mako-kernel" name="device/lge/mako-kernel" groups="device,mako" />
-  <project path="kernel/lge/mako" name="SimpleAOSP/android_kernel_lge_mako" groups="device,mako" remote="github" revision="mainstream" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="device/samsung/manta" name="device/samsung/manta" groups="device,manta" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
@@ -302,6 +300,8 @@
   <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" groups="omap4" />
   <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" />
   <project path="hardware/ti/wpan" name="platform/hardware/ti/wpan" />
+  <project path="kernel/lge/hammerhead" name="SimpleAOSP/android_kernel_lge_hammerhead" groups="device,hammerhead" remote="github" revision="mainstream" />
+  <project path="kernel/lge/mako" name="SimpleAOSP/android_kernel_lge_mako" groups="device,mako" remote="github" revision="mainstream" />
   <project path="libcore" name="platform/libcore" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk-java" />
   <project path="ndk" name="platform/ndk" />
@@ -340,8 +340,8 @@
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
-  <project path="packages/apps/Settings" name="SimpleAOSP/android_packages_apps_Settings" remote="github" revision="kk" />
   <project path="packages/apps/ScreenRecorder" name="SimpleAOSP/android_packages_apps_ScreenRecorder" remote="github" revision="kk" />
+  <project path="packages/apps/Settings" name="SimpleAOSP/android_packages_apps_Settings" remote="github" revision="kk" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <!-- <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" /> --> <!-- Don't build this -->
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
