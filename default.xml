@@ -341,6 +341,7 @@
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
   <project path="packages/apps/Settings" name="SimpleAOSP/android_packages_apps_Settings" remote="github" revision="kk" />
+  <project path="packages/apps/ScreenRecorder" name="SimpleAOSP/android_packages_apps_ScreenRecorder" remote="github" revision="kk" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <!-- <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" /> --> <!-- Don't build this -->
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
