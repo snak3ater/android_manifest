@@ -9,7 +9,8 @@
   <default revision="refs/tags/android-4.4.4_r2.0.1"
            remote="aosp"
            sync-c="true"
-           sync-j="4" />
+           sync-f="true"
+           sync-j="8" />
 
   <project path="build" name="SimpleAOSP/android_build" groups="pdk" remote="github" revision="kk" >
     <copyfile src="core/root.mk" dest="Makefile" />
