@@ -312,7 +312,7 @@
   <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" />
   <project path="packages/apps/CMHome" name="CyanogenMod/android_packages_apps_CMHome" remote="github" revision="cm-11.0" />
   <project path="packages/apps/Contacts" name="SimpleAOSP/android_packages_apps_Contacts" remote="github" revision="kk" />
-  <project path="packages/apps/ContactsCommon" name="platform/packages/apps/ContactsCommon" />
+  <project path="packages/apps/ContactsCommon" name="SimpleAOSP/android_packages_apps_ContactsCommon" remote="github" revision="kk" />
   <project path="packages/apps/DeskClock" name="SimpleAOSP/android_packages_apps_DeskClock" remote="github" revision="kk" />
   <project path="packages/apps/Dialer" name="SimpleAOSP/android_packages_apps_Dialer" remote="github" revision="kk" />
   <project path="packages/apps/Email" name="platform/packages/apps/Email" />
