@@ -39,7 +39,7 @@ sync-j="4" />
 <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
 <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
 <project path="device/google/atv" name="device/google/atv" groups="device,fugu" />
-<project path="device/lge/mako" name="device/lge/mako" groups="device,mako" />
+<project path="device/lge/mako" name="SimpleAOSP-Lollipop/platform_device_lge_mako" remote="github" revision="L" />
 <project path="device/lge/mako-kernel" name="device/lge/mako-kernel" groups="device,mako" clone-depth="1" />
 <project path="device/sample" name="device/sample" groups="pdk" />
 <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs" />
