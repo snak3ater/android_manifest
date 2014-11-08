@@ -493,5 +493,5 @@ sync-j="4" />
 <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" />
 <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
 <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
-<project path="vendor" name="SimpleAOSP-Lollipop/platform_vendor" remote="aosp" revision="L" />
+<project path="vendor" name="SimpleAOSP-Lollipop/platform_vendor" remote="github" revision="L" />
 </manifest>
