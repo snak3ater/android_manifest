@@ -360,6 +360,7 @@
   <project path="packages/apps/Phone" name="platform/packages/apps/Phone" />
   <project path="packages/apps/PhoneCommon" name="platform/packages/apps/PhoneCommon" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
+  <project path="packages/apps/ScreenRecorder" name="SimpleAOSP-Lollipop/platform_packages_apps_ScreenRecorder" remote="github" revision="L" />
   <project path="packages/apps/Settings" name="SimpleAOSP-Lollipop/platform_packages_apps_Settings" remote="github" revision="L" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <!-- <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" /> Don't track or build -->
