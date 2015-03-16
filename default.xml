@@ -459,6 +459,7 @@
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
-
+  <project path="vendor" name="snak3ater/platform_vendor_proprietary" remote="github" revision="L5.1" />
+  <project path="vendor/simpleaosp" name="snak3ater/platform_vendor_simpleaosp" remote="github" revision="L5.1" />
 </manifest>
 
