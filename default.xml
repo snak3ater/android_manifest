@@ -12,5 +12,6 @@
            sync-f="true"
            sync-j="8" />
   <project path="system/extras" name="snak3ater/android_system_extras" groups="pdk" remote="github" revision="kk" />
+  <project path="packages/apps/Contacts" name="snak3ater/packages_apps_Contacts" remote="github" revision="kk" />
 
 </manifest>
