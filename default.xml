@@ -6,14 +6,14 @@
            review="https://android-review.googlesource.com/" />
   <remote  name="github"
            fetch="https://github.com/" />
-  <default revision="refs/tags/android-4.4.4_r2.0.1"
+  <default revision="refs/tags/android-5.0.2_r1"
            remote="aosp"
            sync-c="true"
            sync-f="true"
            sync-j="8" />
-  <project path="art" name="snak3ater/android_art" remote="github" revision="kk" />
-  <project path="external/skia" name="snak3ater/android_external_skia" remote="github" revision="kk" />
+  <project path="art" name="platform/art" groups="pdk" />
+  <project path="external/skia" name="platform/external/skia" groups="pdk-cw-fs,qcom_msm8x26" />
   <project path="system/extras" name="snak3ater/android_system_extras" groups="pdk" remote="github" revision="kk" />
-  <project path="packages/apps/Contacts" name="snak3ater/packages_apps_Contacts" remote="github" revision="kk" />
+  <project path="packages/apps/Contacts" name="platform/packages/apps/Contacts" />
 
 </manifest>
