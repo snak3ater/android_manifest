@@ -444,7 +444,7 @@
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
-  <project path="vendor" name="SAOSP-M/platform_vendor_proprietary" remote="github" revision="M" />
+  <project path="vendor/lge/mako" name="SAOSP-M/platform_vendor_lge_mako" remote="github" revision="M" />
   <project path="vendor/simpleaosp" name="SAOSP-M/platform_vendor_simpleaosp" remote="github" revision="M" />
 </manifest>
 
