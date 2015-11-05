@@ -1,5 +1,5 @@
 ##Initialize the source##
-repo init -u https://github.com/SAOSP-M/platform_manifest.git -b M
+repo init -u https://github.com/snak3ater/android_manifest.git -b M6
 
 ##Sync the source##
 repo sync -jx -f (x being however many cpu jobs)
