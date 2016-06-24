@@ -453,7 +453,7 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
   <project path="vendor/lge/bullhead" name="SAOSP-M/platform_vendor_lge_bullhead" remote="github" revision="M" />
-  <project path="vendor/huawei" name="SAOSP-M/proprietary_vendor_huawei" remote="github" revision="M" />
+  <project path="vendor/huawei" name="PureNexusProject/proprietary_vendor_huawei" remote="github" revision="mm2" />
   <project path="vendor/lge/hammerhead" name="SAOSP-M/platform_vendor_lge_hammerhead" remote="github" revision="M" />
   <project path="vendor/lge/mako" name="SAOSP-M/platform_vendor_lge_mako" remote="github" revision="M" />
   <project path="vendor/simpleaosp" name="SAOSP-M/platform_vendor_simpleaosp" remote="github" revision="M" />
