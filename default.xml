@@ -450,7 +450,7 @@
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
-  <project path="vendor/huawei" name="PureNexusProject/proprietary_vendor_huawei" remote="github" revision="mm2" />
+  <project path="vendor/huawei" name="PureNexusProject-Legacy/proprietary_vendor_huawei" remote="github" revision="mm2" />
   <project path="vendor/simpleaosp" name="SAOSP-M/platform_vendor_simpleaosp" remote="github" revision="fling" />
 </manifest>
 
